@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { useRoute } from '@react-navigation/native';
+import SQLite from 'react-native-sqlite-storage';
 import { CommonActions } from '@react-navigation/native';
 import { View, Text, Alert } from "react-native";
 import { Button } from '@rneui/themed';
+
+import { useRoute } from '@react-navigation/native';
 //Custom Component
 import HeaderComponent from "../../components/headerComponent";
-import SQLite from 'react-native-sqlite-storage';
 
 import styles from './styles'
-
 
 const db = SQLite.openDatabase(
   {

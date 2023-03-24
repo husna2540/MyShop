@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import SQLite from 'react-native-sqlite-storage';
-import { useRoute } from '@react-navigation/native';
 import { CommonActions } from '@react-navigation/native';
 
-import { Alert, Modal, Text, Pressable, View, TextInput } from 'react-native';
-
+import { Alert, Text, View } from 'react-native';
 import { Button } from '@rneui/themed';
 
+import { useRoute } from '@react-navigation/native';
+
 import HeaderComponent from '../../components/headerComponent';
+import InputComponent from '../../components/inputComponent';
 
 import styles from './styles';
-import InputComponent from '../../components/inputComponent';
+
 
 const db = SQLite.openDatabase(
   {

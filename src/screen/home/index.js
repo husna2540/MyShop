@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Image, View, Text, TouchableOpacity, ScrollView, Alert, ActivityIndicator } from "react-native";
-import { Button, Tab, TabView } from '@rneui/themed';
-import LinearGradient from 'react-native-linear-gradient';
-import { CommonActions } from '@react-navigation/native';
+import { Image, View, Text, TouchableOpacity, ScrollView, ActivityIndicator } from "react-native";
+import { Button, Tab } from '@rneui/themed';
+
 //Custom Component
 import HeaderComponent from "../../components/headerComponent";
 import SQLite from 'react-native-sqlite-storage';
 
 import styles from './styles'
-import ModalAddComponent from "../ManageData";
 
 const db = SQLite.openDatabase(
   {
